@@ -36,3 +36,142 @@
     transform: rotate(360deg);
   }
 }
+/* === 🌗 GLOBAL THEME STYLES === */
+
+/* Smooth transitions for theme switching */
+body {
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* === 🌙 DARK THEME === */
+body.dark-theme {
+  background-color: #0a0f1f;
+  color: #ffffff;
+}
+
+/* === ☀️ LIGHT THEME === */
+body.light-theme {
+  background-color: #f8faff;
+  color: #111;
+}
+
+/* === Keep Sidebar Always Dark === */
+.sidebar {
+  background-color: #0a0f1f !important;
+  color: #ffffff !important;
+  border-right: 1px solid #1e2a45 !important;
+}
+
+.sidebar .menu-item:hover {
+  background-color: rgba(0, 255, 255, 0.1) !important;
+  color: #00ffff !important;
+}
+
+/* === Apply Theming to Page Content === */
+.budget-content,
+.settings-content,
+.data-management-content {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Dark Theme Pages */
+body.dark-theme .budget-content,
+body.dark-theme .settings-content,
+body.dark-theme .data-management-content {
+  background-color: #0a0f1f;
+  color: #ffffff;
+}
+
+/* Light Theme Pages */
+body.light-theme .budget-content,
+body.light-theme .settings-content,
+body.light-theme .data-management-content {
+  background-color: #f8faff;
+  color: #111;
+}
+
+/* === Card Styling (Works for All Pages) === */
+.budget-card,
+.settings-card,
+.summary-card {
+  transition: background-color 0.4s ease, border 0.4s ease, color 0.4s ease;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Dark Mode Cards */
+body.dark-theme .budget-card,
+body.dark-theme .settings-card,
+body.dark-theme .summary-card {
+  background-color: #121a2c;
+  border: 1px solid #1e2a45;
+  color: #fff;
+}
+
+/* Light Mode Cards */
+body.light-theme .budget-card,
+body.light-theme .settings-card,
+body.light-theme .summary-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  color: #222;
+}
+
+/* === Buttons === */
+body.light-theme .btn,
+body.light-theme .btn-save {
+  background-color: #007bff !important;
+  color: white !important;
+  border: none !important;
+}
+
+body.dark-theme .btn,
+body.dark-theme .btn-save {
+  background-color: #00ffff !important;
+  color: #000 !important;
+}
+
+/* === Inputs and Dropdowns === */
+input,
+select,
+textarea {
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+  background-color: #1b2438;
+  color: #fff;
+  border: 1px solid #2e3b5e;
+}
+
+body.light-theme input,
+body.light-theme select,
+body.light-theme textarea {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+/* ---- GLOBAL THEMES ---- */
+body.dark-theme {
+  background-color: #0a0f1f;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme {
+  background-color: #f4f6f8;
+  color: #111;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Sidebar stays dark always */
+.sidebar {
+  background-color: #0a0f1f !important;
+  color: white !important;
+}

@@ -1,0 +1,258 @@
+/* -------- Layout -------- */
+.data-management-container {
+  display: flex;
+  background-color: #0a0f1f;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.data-management-content {
+  margin-left: 230px;
+  padding: 40px;
+  width: calc(100% - 230px);
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* -------- Page Header -------- */
+.data-title {
+  font-size: 2rem;
+  color: #00ffff;
+  margin-bottom: 5px;
+}
+
+.data-subtitle {
+  color: #a8b2d1;
+  margin-bottom: 25px;
+}
+
+/* -------- Budget Summary Cards -------- */
+.budget-summary {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  background: #1a2238;
+  border: 1px solid #1e2a45;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+  min-width: 200px;
+  transition: 0.3s;
+}
+
+.summary-card h3 {
+  margin-top: 0;
+  color: #a8b2d1;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  background: #141b30;
+}
+
+/* Income, Expense, Remaining colors */
+.summary-card.income {
+  color: #00ff99;
+}
+
+.summary-card.expense {
+  color: #ff4560;
+}
+
+.summary-card.remaining {
+  color: #00ffff;
+}
+
+/* -------- Table Section -------- */
+.table-title {
+  font-size: 1.5rem;
+  color: #00ffff;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a2238;
+  border-radius: 12px;
+  border: 1px solid #1e2a45;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.transactions-table th,
+.transactions-table td {
+  border-bottom: 1px solid #1e2a45;
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #a8b2d1;
+}
+
+.transactions-table th {
+  background-color: #141b30;
+  color: #00ffff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.transactions-table tr:hover {
+  background-color: #141b30;
+}
+
+.income {
+  color: #00ff99;
+  font-weight: 600;
+}
+
+.expense {
+  color: #ff4560;
+  font-weight: 600;
+}
+
+.no-data {
+  text-align: center;
+  color: #a8b2d1;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* -------- Buttons -------- */
+.data-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+.btn.download {
+  background-color: #00ffff;
+}
+
+.btn.clear {
+  background-color: #ff9800;
+  color: #000;
+}
+
+.btn.clear-all {
+  background-color: #ff4560;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+/* -------- Sidebar (Matching Budget Page) -------- */
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: #0a0f1f;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #1e2a45;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 10px rgba(0, 255, 255, 0.08);
+  overflow-y: auto;
+}
+
+.sidebar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.4);
+}
+
+.menu-title {
+  font-size: 0.8rem;
+  color: #8892b0;
+  margin: 18px 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.menu-item {
+  display: block;
+  color: #c9d1d9;
+  padding: 8px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  color: #00ffff;
+  background: rgba(0, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.sidebar-footer {
+  text-align: center;
+  border-top: 1px solid #1e2a45;
+  padding-top: 12px;
+}
+
+.sidebar-footer p {
+  color: #00ffff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+/* -------- Scrollbar -------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2a45;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ffff;
+}

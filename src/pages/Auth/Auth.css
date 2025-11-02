@@ -1,0 +1,98 @@
+.auth-page {
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 16px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(0, 255, 150, 0.3);
+}
+
+.auth-title {
+  font-size: 1.8rem;
+  color: #00ffcc;
+  margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.auth-form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 0.95rem;
+}
+
+.auth-form input::placeholder {
+  color: #bbb;
+}
+
+.auth-form button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #00ffcc, #00b3ff);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-form button:hover {
+  background: linear-gradient(90deg, #00b3ff, #00ffcc);
+  transform: scale(1.05);
+}
+
+.auth-footer {
+  color: #aaa;
+  margin-top: 1.2rem;
+}
+
+.auth-link {
+  color: #00ffcc;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.forgot-password {
+  text-align: right;
+  margin: 8px 0 12px 0;
+}
+
+.forgot-password span {
+  color: #00ffcc;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.forgot-password span:hover {
+  color: #00b3ff;
+}

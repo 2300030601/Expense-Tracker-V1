@@ -1,0 +1,161 @@
+.investments-page {
+  display: flex;
+  background-color: #0a0f1f;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.investments-content {
+  margin-left: 230px;
+  padding: 40px;
+  width: calc(100% - 230px);
+  background-color: #0a0f1f;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Header */
+.investments-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.investments-header h2 {
+  font-size: 2rem;
+  color: #62dfff;
+  margin-bottom: 8px;
+}
+
+.investments-header p {
+  color: #a8b2d1;
+}
+
+/* Portfolio Overview - side by side */
+.portfolio-overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+  flex-wrap: wrap;
+}
+
+.portfolio-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 260px;
+}
+
+.summary-card {
+  background: rgba(18, 25, 39, 0.95);
+  border: 1px solid #1e2a45;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.2s;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.summary-card:hover {
+  transform: translateY(-4px);
+}
+
+.summary-card h3 {
+  color: #9ac8ff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.summary-card .value {
+  font-size: 1.8rem;
+  color: #00ffff;
+  font-weight: bold;
+}
+
+/* Chart section */
+.chart-section {
+  flex: 1.5;
+  min-width: 400px;
+  background: rgba(18, 25, 39, 0.95);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.15);
+  text-align: center;
+  min-height: 350px;
+}
+
+/* Table */
+.investments-table {
+  background: #111827;
+  border-radius: 16px;
+  padding: 25px;
+  margin: 0 auto;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.investments-table h3 {
+  color: #00ffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.investments-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.investments-table th,
+.investments-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.investments-table th {
+  color: #00ffff;
+  font-weight: 600;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.status.profit {
+  background-color: rgba(0, 255, 100, 0.15);
+  color: #00ff88;
+}
+
+.status.moderate {
+  background-color: rgba(255, 215, 0, 0.15);
+  color: #ffcc00;
+}
+
+/* Footer button */
+.investments-footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-add {
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #00cccc;
+  transform: translateY(-3px);
+}

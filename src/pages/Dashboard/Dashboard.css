@@ -1,0 +1,188 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: radial-gradient(circle at top left, #050811, #0a0f1f);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  overflow-y: auto;
+}
+
+/* Sidebar stays fixed */
+.dashboard-content {
+  flex: 1;
+  padding: 40px;
+  margin-left: 230px;
+  width: calc(100% - 230px);
+}
+
+/* Titles */
+.dashboard-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+.dashboard-subtitle {
+  color: #a8b2d1;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+}
+
+/* ---- Cards Section ---- */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: rgba(16, 24, 43, 0.95);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.25);
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  color: #a8b2d1;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card p {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.card1 {
+  border-top: 3px solid #00ffff;
+}
+.card2 {
+  border-top: 3px solid #00ff99;
+}
+.card3 {
+  border-top: 3px solid #ff6f61;
+}
+.card4 {
+  border-top: 3px solid #7b61ff;
+}
+
+.positive {
+  color: #00ff99;
+}
+.negative {
+  color: #ff6f61;
+}
+.neutral {
+  color: #a8b2d1;
+}
+
+/* ---- Chart + Transactions Section ---- */
+.chart-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.chart-card {
+  background: rgba(16, 24, 43, 0.95);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.chart-card:hover {
+  box-shadow: 0 0 22px rgba(0, 255, 255, 0.25);
+}
+
+.chart-card h3 {
+  font-size: 1.2rem;
+  color: #00ffff;
+  margin-bottom: 15px;
+}
+
+/* Chart Image Placeholder */
+.chart-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.chart-card img:hover {
+  opacity: 1;
+}
+
+/* ---- Transactions ---- */
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #d1d5e0;
+}
+
+.transaction-list .positive {
+  color: #00ff99;
+  font-weight: 600;
+}
+
+.transaction-list .negative {
+  color: #ff6f61;
+  font-weight: 600;
+}
+
+/* View button */
+.view-btn {
+  background: #00ffff;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.view-btn:hover {
+  background: #00b3ff;
+  color: #fff;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .chart-section {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+}
