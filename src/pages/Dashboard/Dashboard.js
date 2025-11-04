@@ -1,3 +1,5 @@
+// Updated by Team 1 (Siri Meghana) to enhance dashboard view
+
 import React, { useEffect, useState } from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import {
